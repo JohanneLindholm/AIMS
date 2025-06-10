@@ -57,7 +57,7 @@
 
 
 tr.sd-table__row:hover {
-  background-color: #e5e5e5 !important;
+  background-color: #f0f0f0 !important;
   transition: background-color 0.2s ease;
 }
 
