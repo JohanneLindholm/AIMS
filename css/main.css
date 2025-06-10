@@ -211,3 +211,9 @@ tr.sd-table__row:hover {
   background-color: #4967AA;
   box-shadow: inset 0 0 0 4px #fff;
 }
+
+
+/* Hide duplicate accessibility title */
+legend.sv-hidden {
+  display: none !important;
+}
