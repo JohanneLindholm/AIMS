@@ -1,5 +1,5 @@
 @import "~jspsych/css/jspsych.css";
-
+import '@jspsych/plugin-survey/css/survey.css'
 
 /*!*************************************************************************************************************!*\
   !*** css ../../node_modules/css-loader/dist/cjs.js!../../node_modules/@fontsource/open-sans/400-italic.css ***!
