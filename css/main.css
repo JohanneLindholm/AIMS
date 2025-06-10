@@ -1,5 +1,5 @@
 @import "~jspsych/css/jspsych.css";
-@import '@jspsych/plugin-survey/css/survey.css'
+
 
 /*!*************************************************************************************************************!*\
   !*** css ../../node_modules/css-loader/dist/cjs.js!../../node_modules/@fontsource/open-sans/400-italic.css ***!
@@ -165,53 +165,50 @@
   !*** css ../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*****************************************************************************************************************/
 
-
-/* ===== NEXT BUTTON ===== */
-.jspsych-btn {
-  display: block;
-  width: 640px;
-  padding: 4px 16px;           /* Smaller height */
-  margin: 130px auto 0 auto;    /* Lower on screen */
+/* === Clean Qualtrics-like layout === */
+.aims-root {
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 16px;
+  color: #000;
+  background: white;
+}
+
+.aims-matrix {
+  border-collapse: collapse;
+  width: auto;
+  margin: 0 auto;
+}
+
+.aims-cell {
+  padding: 8px 10px;
   text-align: center;
-  background-color: #4967AA;
-  color: white;
-  border: none;
-  border-radius: 4px;
+  vertical-align: middle;
+}
+
+.aims-cell:first-child {
+  text-align: left;
+  width: 280px;
+}
+
+.aims-label {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.aims-radio input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #4967AA;
+  background: #fff;
+  margin: 0 auto;
+  display: block;
   cursor: pointer;
 }
 
-.jspsych-btn:hover {
-  background-color: #3a518c;
-}
-
-.jspsych-btn:disabled {
-  background-color: #eee;
-  color: #aaa;
-  border: 1px solid #ccc;
-  cursor: not-allowed;
-}
-
-/* ===== OPTIONAL: Hide useless previous button ===== */
-button.jspsych-btn:disabled {
-  display: none !important;
-}
-@media (max-height: 700px) {
-  .jspsych-content-wrapper {
-    margin-top: -80px; /* smaller offset on short screens */
-  }
-
-  .jspsych-btn {
-    margin-top: 80px; /* prevent it from being too low */
-  }
-}
-
-@media (max-height: 500px) {
-  .jspsych-content-wrapper {
-    margin-top: -40px;
-  }
-
-  .jspsych-btn {
-    margin-top: 40px;
-  }
+.aims-radio input[type="radio"]:checked {
+  background-color: #4967AA;
+  box-shadow: inset 0 0 0 4px #fff;
 }
