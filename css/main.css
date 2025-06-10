@@ -60,6 +60,19 @@ tr.sd-table__row:hover {
 }
 
 
+/* Always style selected radio button decorators */
+.sd-item.sd-radio.sd-radio--checked .sd-radio__decorator {
+  background-color: #4967AA !important;
+  border-color: #4967AA !important;
+}
+
+/* Style base ring too */
+.sd-radio__decorator {
+  border-color: #4967AA !important;
+  background-color: white !important;
+}
+
+
 .sd-radio__decorator svg {
   display: none !important;
 }
