@@ -228,6 +228,10 @@
     --sjs-transition-duration: 150ms;
 }
 
+#jspsych-data {
+  display: none !important;
+}
+
 .sv-action-bar {
     display: flex;
     box-sizing: content-box;
